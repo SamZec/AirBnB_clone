@@ -1,4 +1,5 @@
 # AirBnB clone - The console
+![AirBnB logo](https://npr.brightspotcdn.com/legacy/sites/wvtf/files/201506/airbnb_logo_detail.png)
 
 The AirBnB clone project has the goal to deploy on my server a simple copy of the AirBnB website.
 What Is Airbnb? Airbnb, as in “Air Bed and Breakfast,” is a service that lets property owners rent
@@ -15,17 +16,28 @@ After 4 months, a complete web application composed by:
 * A database or files that store data (data = objects)
 * An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
+## General Objectives
+
+* How to create a Python package
+* How to create a command interpreter in Python using the cmd module
+* What is Unit testing and how to implement it in a large project
+* How to serialize and deserialize a Class
+* How to write and read a JSON file
+* How to manage `datetime`
+* What is an `UUID`
+* What is `*args` and how to use it
+* What is `**kwargs` and how to use it
+* How to handle named arguments in a function
+
 ## Concepts learned
-* Unittest
-* Python packages
-* Serialization/Deserialization
-* `*args and **kwargs`
-* datetime
 
-
-**Steps**
-The process of the project is not to build this application all at once, but step by step.
+The concept of the project is not to build the application all at once, but step by step.
 Each step will link to a concept:
+* **Unittest**
+* **Python packages**
+* **Serialization/Deserialization**
+* `*args and **kwargs`
+* **datetime**
 * **The console**
 * **Web static**
 * **Web framework - templating**
