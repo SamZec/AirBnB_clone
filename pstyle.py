@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # pycodestyle.py
-""" pycodestyle.py - a module that passes the pycodestyle check"""
+""" pstyle.py - a module that passes the pycodestyle check"""
 
 from datetime import datetime
 
