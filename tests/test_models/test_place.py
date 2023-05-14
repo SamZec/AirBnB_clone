@@ -61,6 +61,7 @@ class TestPlaceInstance(unittest.TestCase):
 
         self.assertEqual(str(p), p.__str__())
 
+
 class TestCreatePlace(unittest.TestCase):
     """class for unittesting creation of Place instances"""
     def test_created_place_instance(self):
@@ -93,7 +94,7 @@ class TestCreatePlace(unittest.TestCase):
     def test_print_instance_format(self):
         p = Place()
         _str = '[{}] ({}) {}'.format(p.__class__.__name__, p.id, p.__dict__)
-        
+
         self.assertEqual(_str, str(p))
 
     def test_args_unsed(self):
@@ -111,6 +112,7 @@ class TestCreatePlace(unittest.TestCase):
         p1 = Place(**p)
 
         self.assertIsInstance(p1, Place)
+
 
 class TestDictPlace(unittest.TestCase):
     """A class for unittesting inherited dict method from BaseModel"""
@@ -141,7 +143,7 @@ class TestDictPlace(unittest.TestCase):
         self.assertEqual(type(p['updated_at']), str)
 
     def test_updated_at_isoformat(self):
-        p =Place()
+        p = Place()
         _dict = p.to_dict()
 
         self.assertEqual(_dict['updated_at'], p.updated_at.isoformat())

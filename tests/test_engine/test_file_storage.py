@@ -5,7 +5,10 @@
 """
 
 from models.engine.file_storage import FileStorage
-import unittest, json, os, models
+import unittest
+import json
+import os
+import models
 
 
 class TestFileStorageInstances(unittest.TestCase):
@@ -28,6 +31,7 @@ class TestFileStorageInstances(unittest.TestCase):
     def test_args(self):
         with self.assertRaises(TypeError) as f:
             FileStorage("Hello")
+
 
 class TestAllMetod(unittest.TestCase):
     pass

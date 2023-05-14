@@ -28,6 +28,7 @@ class TestCityIntance(unittest.TestCase):
     def test_city_updated_at(self):
         self.assertTrue(City().updated_at)
 
+
 class TestCreateCity(unittest.TestCase):
     """A class for unittesting City instance creation"""
     def test_no_arg(self):
@@ -76,6 +77,7 @@ class TestCreateCity(unittest.TestCase):
         c1.save()
 
         self.assertNotEqual(update_at, c1.updated_at)
+
 
 class TestCityToDict(unittest.TestCase):
     """A class for unittesting city inherited method to_dict"""

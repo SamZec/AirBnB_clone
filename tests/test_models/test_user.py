@@ -28,5 +28,3 @@ class TestUserInstances(unittest.TestCase):
 
     def test_last_name_attribute(self):
         self.assertEqual(type(User.last_name), str)
-
-

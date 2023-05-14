@@ -37,6 +37,7 @@ class TestStateIntance(unittest.TestCase):
 
         self.assertEqual(_str, str(s))
 
+
 class TestCreateState(unittest.TestCase):
     """A class for unittesting creation of State instances"""
     def test_no_args(self):
@@ -76,6 +77,7 @@ class TestCreateState(unittest.TestCase):
         s = State(**_dict)
 
         self.assertEqual(s.name, 'Accra')
+
 
 class TestStateToDict(unittest.TestCase):
     """A class for unittesting State inherited method to_dict()"""

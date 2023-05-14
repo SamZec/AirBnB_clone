@@ -3,7 +3,10 @@
 """A module for unittesting base_model module containing class BaseModel"""
 
 from models.base_model import BaseModel
-import json, unittest, sys, os
+import json
+import unittest
+import sys
+import os
 from datetime import datetime
 import models
 
@@ -29,7 +32,7 @@ class TestBaseModelInstance(unittest.TestCase):
     def test_assigned_1_attributes(self):
         base = BaseModel()
         base.number = 1
-        
+
         self.assertEqual(base.number, 1)
 
     def test_assigned_multiple_attributes(self):
@@ -68,8 +71,9 @@ class TestBaseModelInstance(unittest.TestCase):
 
     def test_dict_method(self):
         base = BaseModel()
-        
+
         self.assertEqual(type(base.to_dict()), dict)
+
 
 class TestBaseModelArgsKwargs(unittest.TestCase):
     """class for unttesting *args and **kwargs passed to BaseModel"""

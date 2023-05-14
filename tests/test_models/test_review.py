@@ -58,6 +58,7 @@ class TestReviewInstanceType(unittest.TestCase):
 
         self.assertEqual(_str, str(r))
 
+
 class TestReviewToDictToInstance(unittest.TestCase):
     """A class for unittesting to_dict method of Review"""
     def test_to_dict_type(self):

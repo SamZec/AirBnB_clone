@@ -28,6 +28,7 @@ class TestAmenityInstace(unittest.TestCase):
     def test_amenity_name_empty(self):
         self.assertFalse(Amenity.name)
 
+
 class TestCreateAmenityInstance(unittest.TestCase):
     """A class for uittesting Amenity instance creation"""
     def test_create_no_args(self):
@@ -40,7 +41,7 @@ class TestCreateAmenityInstance(unittest.TestCase):
 
     def test_used_kwargs(self):
         a = Amenity(bed='latex')
-        
+
         self.assertEqual(a.bed, 'latex')
 
     def test_create_from_dict(self):
@@ -60,6 +61,7 @@ class TestCreateAmenityInstance(unittest.TestCase):
         _dict = '[{}] ({}) {}'.format(a.__class__.__name__, a.id, a.__dict__)
 
         self.assertEqual(_dict, str(a))
+
 
 class TestAmenityToDict(unittest.TestCase):
     """A clsss for unittesting Amenity inherited method to_dict()"""
@@ -94,5 +96,3 @@ class TestAmenityToDict(unittest.TestCase):
         a1 = a.to_dict()
 
         self.assertEqual(a1['updated_at'], a.updated_at.isoformat())
-
-
