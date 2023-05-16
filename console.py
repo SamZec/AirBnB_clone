@@ -67,7 +67,7 @@ class HBNBCommand(cmd.Cmd):
             if match is not None:
                 command = [arg_list[1][:match.span()[0]], match.group()[1:-1]]
                 if command[0] in arg_dict.keys():
-                    call = "{} {}".format(argl[0], command[1])
+                    call = "{} {}".format(arg_list[0], command[1])
                     return arg_dict[command[0]](call)
         print("*** Unknown syntax: {}".format(arg))
         return False
