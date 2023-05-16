@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # console.py
-"""a module that contains the class HBNBCommand"""
+"""A module that contains the class HBNBCommand"""
+
 from models import storage
 from models.base_model import BaseModel
 from models.user import User
@@ -132,7 +133,7 @@ class HBNBCommand(cmd.Cmd):
         Display string representations of all instances of a given class.
         If no class is specified, displays all instantiated objects.\n"""
         arg_list = arg_parse(arg)
-        if len(arg_list) > 0 and argl[0] not in HBNBCommand.__classes:
+        if len(arg_list) > 0 and arg_list[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         else:
             obj_list = []
