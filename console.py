@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # console.py
-"""a module that contains the class HBNBCommand"""
+"""A module that contains the class HBNBCommand"""
+
 from models import storage
 from models.base_model import BaseModel
 from models.user import User
